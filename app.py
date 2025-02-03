@@ -6,9 +6,11 @@ from ui.ml import run_ml
 
 
 def main() :
-    st.title('Car Price Prediction App')
-    menu = ['Home', 'EDA', 'ML']
-    choice = st.sidebar.selectbox('Menu', menu)
+    st.title('자동차 거래 가격 예측 앱')
+    
+    st.sidebar.title('SIDEBAR')
+    menu = ['HOME', 'EDA', 'ML']
+    choice = st.sidebar.selectbox('MENU', menu)
 
     if choice == menu[0] :
         run_home()
