@@ -21,9 +21,9 @@ def run_ml() :
     st.subheader('')
 
     new_gender = 0
-    if gender is '남성' :
+    if gender == '남성' :
         new_gender = 1
-    elif gender is '여성' :
+    elif gender == '여성' :
         new_gender = 0
 
     new_data = np.array([new_gender, age, salary, debt, net]).reshape(1, 5)
