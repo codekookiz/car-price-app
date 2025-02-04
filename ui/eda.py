@@ -7,7 +7,7 @@ def run_eda() :
     st.header('EDA (탐색적 데이터 분석)')
     st.subheader('')
 
-    st.info('축적된 과거 데이터 -> Gender : 0(여성), 1(남성)')
+    st.info('축적된 과거 데이터 \n\nGender : 0(여성), 1(남성)')
     df = pd.read_csv('data/Car_Purchasing_Data.csv')
     st.dataframe(df)
     st.text('')
