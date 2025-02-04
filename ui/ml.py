@@ -15,9 +15,9 @@ def run_ml() :
 
     gender = st.selectbox('성별을 선택하세요.', ['남성', '여성'])
     age = st.number_input('나이를 입력하세요.', min_value = 0, max_value = 150, value = 40)
-    salary = st.number_input('연봉을 입력하세요.', min_value = 0, step = 10, value = 30000)
-    debt = st.number_input('신용카드 부채를 입력하세요.', min_value = 0, step = 10, value = 5000)
-    net = st.number_input('순자산을 입력하세요.', step = 10, value = 75000)
+    salary = st.number_input('연봉을 입력하세요. ($)', min_value = 0, step = 10, value = 30000)
+    debt = st.number_input('신용카드 부채를 입력하세요. ($)', min_value = 0, step = 10, value = 5000)
+    net = st.number_input('순자산을 입력하세요. ($)', step = 10, value = 75000)
     st.subheader('')
 
     new_gender = 0
